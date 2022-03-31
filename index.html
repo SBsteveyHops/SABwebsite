@@ -64,9 +64,24 @@
             color: #60C689; 
             font-family: Sans-serif;
         }
-
         </style>
 
+        <style>
+        .buttonTop {
+            border: none;
+            color: #60C689;
+            background-color: #363636;
+            font-size: 20px;
+            margin: 0.5%;
+            padding: 3% 5%;
+            border-radius: 10px;
+            bottom: 20px;
+        }
+        .buttonTop:hover {
+            color: #121212;
+            background-image: linear-gradient(to right, #60C689, #43c5d6);
+        }
+        </style>
     </head>
     <body>
         <body style="background-color: #121212;">
@@ -75,6 +90,8 @@
         <div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
             <div class="midBody" data-aos-delay="210" data-aos="fade-up">Currently there is no schedule for</div>
             <div class="midBody" data-aos-delay="210" data-aos="fade-up">stable or beta releases.</div>
+            <div style="font-size: 9px;" class="midBody" data-aos-delay="210" data-aos="fade-up">(Stable release button will start downloading on click)</div>
+            <button class="buttonTop midBody" data-aos-delay="220" data-aos="fade-up">Stable Release</button>
         </div>
         <div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="midboxtop">Mods
             <div class="midBody" data-aos-delay="210" data-aos="fade-up">We have a very large and great community</div>
