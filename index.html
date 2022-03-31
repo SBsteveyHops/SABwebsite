@@ -13,36 +13,45 @@
 		</script> 
 		
         <style>
+		#boxTop {
+			
+		}
         #leftboxtop {
             float: left;
             width: 30%;
             height: 55%;
+			position: relative;
         }
         #midboxtop {
             float: left;
             width: 30%;
             height: 55%;
+			position: relative;
         }
         #rightboxtop {
             float: left;
             width: 30%;
             height: 55%;
+			position: relative;
         }
+		second {
+			
+		}
         </style>
 	    
         <style>
-	    div.curvyBackgroundTop {
+	    .curvyBackgroundTop {
             padding-top: 20px;
 	        background: #1f1f1f;
 	        border-radius: 10px;
 	    }
-        div.titleTop {
+        .titleTop {
             font-size:35px;
             margin: 30px; 
             color: #60C689; 
             font-family: Sans-serif; 
         }
-        div.boxBodyTop {
+        .boxBodyTop {
             font-size: 50px;
             margin: 1.6665%;
             margin-top: 4%;
@@ -50,27 +59,27 @@
             color: #60C689; 
             font-family: Sans-serif;
         }
-        div.smallBody   {
+        .smallBody   {
             font-size: 13px;
             margin: 35px; 
             margin-top: -20px;
             color: #60C689; 
             font-family: Sans-serif;
         }
-        div.midBody   {
+        .midBody   {
             font-size: 17px;
             margin: 5px; 
             color: #60C689; 
             font-family: Sans-serif;
         }
-        div.bigBody {
+        .bigBody {
             font-size: 50px;
             margin: 35px;
             color: #60C689; 
             font-family: Sans-serif;
         }
-        </style>
-
+		</style>
+		
         <style>
         .buttonTop {
             border: none;
@@ -86,33 +95,47 @@
             background-image: linear-gradient(to right, #60C689, #43c5d6);
         }
         </style>
+		
+		<style>
+		.triangle {
+			width: 0;
+			height: 0;
+			border-left: 25px solid transparent;
+			border-right: 25px solid transparent;
+			border-top: 30px solid #555;
+		}
+        </style>
     </head>
     <body>
-        <body style="background-color: #121212;">
+        <body style="background-color: #121212;"> <!Title>
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up">A game made by: AshQumby and a_viper.</div>
 		
-        <div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
-            <div class="midBody" data-aos-delay="210" data-aos="fade-up">Currently there is no schedule for</div>
-            <div class="midBody" data-aos-delay="210" data-aos="fade-up">stable or beta releases.</div>
-            <div style="font-size: 9px; margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">(Stable release button will start downloading on click)</div>
-            <button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Stable</button>
-			<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Beta 1.7</button>
-        </div>
+        <div id="boxTop">
+			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads <!Box 1>
+				<div class="midBody" data-aos-delay="210" data-aos="fade-up">Currently there is no schedule for</div>
+				<div class="midBody" data-aos-delay="210" data-aos="fade-up">stable or beta releases.</div>
+				<div style="font-size: 9px; margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">(Stable release button will start downloading on click)</div>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Stable</button>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Beta 1.7</button>
+			</div> <!End of box 1>
 		
-        <div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="midboxtop">Mods
-            <div class="midBody" data-aos-delay="210" data-aos="fade-up">We have a very large and great community</div>
-            <div style=" margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">of modders who love their work.</div>
-			<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Find Mods</button>
-			<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Modding Discord</button>
-        </div>
+			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="midboxtop">Mods <!Box 2>
+				<div class="midBody" data-aos-delay="210" data-aos="fade-up">We have a very large and great community</div>
+				<div style=" margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">of modders who love their work.</div>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Find Mods</button>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Modding Discord</button>
+			</div> <!End of box 2>
 		
-        <div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="rightboxtop">Community
-            <div class="midBody" data-aos-delay="210" data-aos="fade-up">Join our community discord server to get mod</div>
-            <div class="midBody" data-aos-delay="210" data-aos="fade-up">develovment help or general help with SAB and</div>
-            <div style=" margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">you even get to meet others!</div>
-			<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Cummunity Discord</button>
-        </div>
+			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop" data-aos-delay="200" data-aos="fade-up" id="rightboxtop">Community <!Box 3>
+				<div class="midBody" data-aos-delay="210" data-aos="fade-up">Join our community discord server to get mod</div>
+				<div class="midBody" data-aos-delay="210" data-aos="fade-up">develovment help or general help with SAB and</div>
+				<div style=" margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">you even get to meet others!</div>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Community Discord</button>
+			</div> 
+		</div> <!End of box 3>
+		
+		<div class="triangle" id="second"></div>
 		
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
