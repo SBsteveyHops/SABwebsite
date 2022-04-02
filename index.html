@@ -91,7 +91,6 @@
         .curvyBackgroundTop1:hover {
             background-image: url("assets/images/main/DB.png");
             max-width:100%;
-            height: auto;
         }
         .curvyBackgroundTop2:hover {
             background-image: url("assets/images/main/OSRB.png");
@@ -104,6 +103,10 @@
         </style>
 
         <style>
+        @keyframes buttonEx{
+            from {padding: 3% 5%; margin: 1.5%;}
+            to {padding: 3.5% 5.5%; margin: 1%;}
+        }
         .buttonTop {
             border: none;
             color: #60C689;
@@ -116,6 +119,9 @@
         .buttonTop:hover {
             color: #121212;
             background-image: linear-gradient(to right, #60C689, #43c5d6);
+            animation-name: buttonEx;
+            animation-duration: 0.2s;
+            animation-fill-mode: forwards;
         }
         </style>
 
