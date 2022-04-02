@@ -116,9 +116,13 @@
         </style>
 
         <style>
-        @keyframes buttonEx{
+        @keyframes buttonExIn{
             from {padding: 3% 5%; margin: 1.5%;}
             to {padding: 3.5% 5.5%; margin: 1%;}
+        }
+        @keyframes buttonExOut{
+            from {padding: 3.5% 5.5%; margin: 1%;}
+            to {padding: 3% 5%; margin: 1.5%;}
         }
         .buttonTop {
             border: none;
@@ -128,12 +132,13 @@
             margin: 1.5%;
             padding: 3% 5%;
             border-radius: 10px;
+            animation: buttonExOut 0.2s;
+            animation-fill-mode: forwards;
         }
         .buttonTop:hover {
             color: #121212;
             background-image: linear-gradient(to right, #60C689, #43c5d6);
-            animation-name: buttonEx;
-            animation-duration: 0.2s;
+            animation: buttonExIn 0.2s;
             animation-fill-mode: forwards;
         }
         </style>
