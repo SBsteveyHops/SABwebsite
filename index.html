@@ -65,6 +65,8 @@
             margin-bottom: 30px;
             color: #60C689; 
             font-family: Sans-serif;
+            animation: BoxExOut 0.2s ;
+            animation-fill-mode: forwards;
         }
         .smallBody   {
             font-size: 13px;
@@ -88,17 +90,31 @@
 		</style>
 		
         <style> 
+        @keyframes BoxExIn {
+            from {}
+            to {padding: 1%; margin: 0.6665%; margin-top: 3.5%; margin-bottom: 30px;}
+        }
+        @keyframes BoxExOut {
+            from {padding: 1%; margin: 0.6665%; margin-top: 3.5%; margin-bottom: 30px;}
+            to {}
+        }
         .curvyBackgroundTop1:hover {
             background-image: url("assets/images/main/DB.png");
             max-width: 100%;
+            animation: BoxExIn 0.2s ;
+            animation-fill-mode: forwards;
         }
         .curvyBackgroundTop2:hover {
             background-image: url("assets/images/main/OSRB.png");
             max-width: 100%;
+            animation: BoxExIn 0.2s ;
+            animation-fill-mode: forwards;
         }
         .curvyBackgroundTop3:hover {
             background-image: url("assets/images/main/WB.png");
             max-width: 100%;
+            animation: BoxExIn 0.2s ;
+            animation-fill-mode: forwards;
         }
         </style>
 
@@ -163,7 +179,6 @@
 				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Community Discord</button>
 			</div> 
 		</div>
-		
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
             AOS.init({duration: 2000});
