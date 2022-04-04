@@ -31,6 +31,7 @@
             height: 55%;
 			position: relative;
         }
+        #
         </style>
 	    
         <style>
@@ -151,6 +152,16 @@
             animation: onClickB 0.4s;
         }
         </style>
+
+        <style>
+        .arrow {
+            background-image: url("assets/images/main/arowdown.png");
+            background-size: 5%;
+            padding: 5%;
+            width: 50%;
+            display: block;
+        }
+        </style>
         
     <body>
         <body style="background-color: #121212;">
@@ -162,7 +173,7 @@
 				<div class="midBody" data-aos-delay="210" data-aos="fade-up">Currently there is no schedule for</div>
 				<div class="midBody" data-aos-delay="210" data-aos="fade-up">stable or beta releases.</div>
 				<div style="font-size: 9px; margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">(Stable release button will start downloading on click)</div>
-				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up" action="https://bit.ly/3x10nxF">Stable</button>
+				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Stable</button>
 				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Beta 1.5</button>
 			</div>
 		
@@ -180,6 +191,9 @@
 				<button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Community Discord</button>
 			</div> 
 		</div>
+        
+        <div class="arrow" data-aos-delay="300" data-aos="fade-up"></div>
+
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
             AOS.init({duration: 2000});
