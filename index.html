@@ -41,7 +41,7 @@
             function eraseCookie(name) {   
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
-            setCookieSsab('sabstyle','sab',356);
+            setCookie('sabstyle','sab',356);
 
             var ssab = getCookie('sabstyle');
             if (ssab == sab) {
@@ -54,8 +54,8 @@
                 position: absolute;
                 top: 0px;
                 right: 0px;
-                margin: 1%;
-                max-width: 50px;
+                margin: 2%;
+                max-width: 40px;
                 height: auto;
                 cursor: pointer;
             }
@@ -246,7 +246,7 @@
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
-        <img class="ssab" src="assets/images/main/ssab.png" alt="Swap Style" data-aos="fade-up" onclick="setCookieSsab()"></img>
+        <img class="ssab" src="assets/images/main/ssab.png" alt="Swap Style" data-aos="fade-up" onclick="setCookie('sabstyle','sab',356)"></img>
 		
         <div id="boxTop">
 			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop1" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
