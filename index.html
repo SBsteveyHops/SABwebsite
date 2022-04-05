@@ -11,7 +11,7 @@
             var websiteV = "0.18v";
 			var betaV = "1.4.9";
 			var StableV = "0.0";
-            
+
             function version () {
                 document.getElementById('websiteV').innerHTML = 'A game made by: AshQumby and a_viper. ' + websiteV;
                 document.getElementById('betaV').innerHTML = 'Beta ' + betaV;
@@ -48,6 +48,18 @@
                 
             }
         </script>
+
+        <style>
+            .ssab {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                margin: 1%;
+                max-width: 50px;
+                height: auto;
+                cursor: pointer;
+            }
+        </style>
 		
         <style>
             @keyframes onClick {
@@ -234,6 +246,7 @@
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
+        <img class="ssab" src="assets/images/main/ssab.png" alt="Swap Style" data-aos="fade-up" onclick="setCookieSsab()"></img>
 		
         <div id="boxTop">
 			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop1" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
@@ -259,7 +272,7 @@
 			</div> 
 		</div>
         
-        <img  class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
+        <img class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
             AOS.init({duration: 2000});
