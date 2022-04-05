@@ -10,44 +10,39 @@
 		<script> 
 			var betaV = 1.7;
 			var StableV = 0.0;
+            
 		</script> 
 
         <script>
-            function setCookie(cname,cvalue,exdays) {
-            const d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            let expires = "expires=" + d.toUTCString();
-            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-            }
-            
-            function getCookie(cname) {
-            let name = cname + "=";
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let ca = decodedCookie.split(';');
-            for(let i = 0; i < ca.length; i++) {
-                let c = ca[i];
-                while (c.charAt(0) == ' ') {
-                c = c.substring(1);
+            function setCookie(name,value,days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days*24*60*60*1000));
+                    expires = "; expires=" + date.toUTCString();
                 }
-                if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
+                document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+            }
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
                 }
+                return null;
             }
-            return "";
+            function eraseCookie(name) {   
+                document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
-            
-            function checkCookie() {
-            let style = getCookie("styleID");
-            if (style != "") {
-                alert("Welcome again " + style);
-            } else {
-                style = prompt("Please enter your name:","");
-                if (style != "" && style != null) {
-                setCookie("stlyeID", style, 30);
-                }
+            setCookieSsab('sabstyle','sab',356);
+
+            var ssab = getCookie('sabstyle');
+            if (ssab == sab) {
+                
             }
-            }
-            </script>
+        </script>
 		
         <style>
             @keyframes onClick {
@@ -230,10 +225,10 @@
             }
         </style>
         
-    <body onload="checkCookie()">
+    <body onload="setCookieSsab">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
-        <div class="smallBody" data-aos="fade-up">A game made by: AshQumby and a_viper. 0.17v</div>
+        <div class="smallBody" data-aos="fade-up">A game made by: AshQumby and a_viper. Website Version: 0.16v</div>
 		
         <div id="boxTop">
 			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop1" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
@@ -259,7 +254,7 @@
 			</div> 
 		</div>
         
-        <img class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
+        <img  class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
             AOS.init({duration: 2000});
