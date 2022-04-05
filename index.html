@@ -8,9 +8,14 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
 		<script> 
-			var betaV = 1.7;
-			var StableV = 0.0;
+            var websiteV = "0.18v";
+			var betaV = "1.4.9";
+			var StableV = "0.0";
             
+            function version () {
+                document.getElementById('websiteV').innerHTML = 'A game made by: AshQumby and a_viper. ' + websiteV;
+                document.getElementById('betaV').innerHTML = 'Beta ' + betaV;
+            }
 		</script> 
 
         <script>
@@ -225,10 +230,10 @@
             }
         </style>
         
-    <body onload="setCookieSsab">
+    <body onload="version(); setCookieSsab();">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
-        <div class="smallBody" data-aos="fade-up">A game made by: AshQumby and a_viper. Website Version: 0.16v</div>
+        <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
 		
         <div id="boxTop">
 			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop1" data-aos-delay="200" data-aos="fade-up" id="leftboxtop">Downloads
@@ -236,7 +241,7 @@
 				<div class="midBody" data-aos-delay="210" data-aos="fade-up">stable or beta releases.</div>
 				<div style="font-size: 9px; margin-bottom: 30px;" class="midBody" data-aos-delay="210" data-aos="fade-up">(Stable release button will start downloading on click)</div>
 				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Stable</button></a>
-				<a href="https://github.com/AshQuimby/SAB-Source"><button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up">Beta 1.4.9.9</button></a>
+				<a href="https://github.com/AshQuimby/SAB-Source"><button class="buttonTop midBody" data-aos-delay="300" data-aos="fade-up" id="betaV"></button></a>
 			</div>
 		
 			<div style="margin-top: 4%; text-align: center;" class="boxBodyTop curvyBackgroundTop2" data-aos-delay="200" data-aos="fade-up" id="midboxtop">Mods 
