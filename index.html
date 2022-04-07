@@ -8,7 +8,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
 		<script> 
-            var websiteV = "0.46v";
+            var websiteV = "0.47v";
 			var betaV = "1.4.9";
 			var StableV = "0.0";
 
@@ -56,9 +56,9 @@
             function doSsab() {
                 var ssab = getCookie('ssab');
                 if (ssab == "sab") {
-                    ssabOff();
-                } else {
                     ssabOn();
+                } else {
+                    ssabOff();
                 }
             }
             function ssabOn() {
