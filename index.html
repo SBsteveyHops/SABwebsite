@@ -42,12 +42,14 @@
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
 
-            var ssab = getCookie('ssab');
-            if (ssab == sab) {
-                r.style.setProperty('--textColor','white');
-            } else {
-                r.style.setProperty('--textColor','#60C689');
-            }
+            function styleSab() {
+                var ssab = getCookie('ssab');
+                if (ssab == sab) {
+                    r.style.setProperty('--textColor','white');
+                } else {
+                    r.style.setProperty('--textColor','#60C689');
+                }
+            }   
         </script>
 
         <style>
@@ -243,7 +245,7 @@
             }
         </style>
         
-    <body onload="version(); setCookie('ssab','sab',356);">
+    <body onload="version(); styleSab(); setCookie('ssab','sab',356);">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
