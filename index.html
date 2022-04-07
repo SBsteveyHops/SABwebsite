@@ -51,7 +51,7 @@
                 }
             }  
             function buttonSsab(state) {
-                if (state == !"") {
+                if (state !== '') {
                     var state = 1;
                     setCookie('ssab','sab',356);
                     doSsab();
