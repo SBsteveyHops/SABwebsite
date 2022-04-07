@@ -41,7 +41,6 @@
             function eraseCookie(name) {   
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
-            
             function doSsab() {
                 var r = document.querySelector(':root');
                 var ssab = getCookie('ssab');
@@ -50,7 +49,18 @@
                 } else {
                     r.style.setProperty('--textColor','#60C689');
                 }
-            }   
+            }  
+            function buttonSsab(state) {
+                if (state == !"") {
+                    var state = 1;
+                    setCookie('ssab','sab',356);
+                    doSsab();
+                } else {
+                    var state = null;
+                    eraseCookie('ssab');
+                    doSsab();
+                }
+            }
         </script>
 
         <style>
@@ -249,7 +259,7 @@
             }
         </style>
         
-    <body onload="version(); doSsab(); setCookie('ssab','sab',356);">
+    <body onload="version();">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
@@ -279,7 +289,7 @@
 			</div> 
 		</div>
         
-        <img class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
+        <img onclick="buttonSsab()" class="arrow" src="assets/images/main/arowdown.png" alt="Scroll Down" data-aos-duration="1000" data-aos="flip-down"></img>
         <script>
             src="https://unpkg.com/aos@2.3.1/dist/aos.js"
             AOS.init({duration: 2000});
