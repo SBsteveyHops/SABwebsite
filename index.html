@@ -41,7 +41,6 @@
             function eraseCookie(name) {   
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
-            setCookie('ssab','sab',356);
 
             var ssab = getCookie('sabstyle');
             if (ssab == sab) {
@@ -244,7 +243,7 @@
             }
         </style>
         
-    <body onload="version(); setCookieSsab();">
+    <body onload="version(); setCookie('ssab','sab',356);">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
