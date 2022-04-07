@@ -52,11 +52,11 @@
             }
             function buttonSsab(state) {
                 if (state !== 1) {
-                    var state = 1;
+                    let state = 1;
                     setCookie('ssab','sab',356);
                     ssabOn();
                 } else {
-                    var state = null;
+                    let state = null;
                     eraseCookie('ssab');
                     ssabOff();
                 }
