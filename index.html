@@ -45,20 +45,20 @@
                 var r = document.querySelector(':root');
                 var ssab = getCookie('ssab');
                 if (ssab == "sab") {
-                    r.style.setProperty('--textColor','white');
+                    ssabOff();
                 } else {
-                    r.style.setProperty('--textColor','#60C689');
+                    ssabOn();
                 }
             }
             function buttonSsab(state) {
-                if (state !== "") {
+                if (state == null) {
                     var state = 1;
                     setCookie('ssab','sab',356);
-                    doSsab();
+                    ssabOn();
                 } else {
                     var state = null;
                     eraseCookie('ssab');
-                    doSsab();
+                    ssabOff();
                 }
             }
             function ssabOn() {
@@ -265,7 +265,7 @@
             }
         </style>
         
-    <body onload="version();">
+    <body onload="version(); doSsab();">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
