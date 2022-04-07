@@ -45,7 +45,9 @@
 
             var ssab = getCookie('sabstyle');
             if (ssab == sab) {
-                
+                r.style.setProperty('--textColor','white');
+            } else {
+                r.style.setProperty('--textColor','#60C689');
             }
         </script>
 
@@ -113,7 +115,7 @@
             .titleTop {
                 font-size:35px;
                 margin: 30px; 
-                color: #60C689; 
+                color: var(--textColor); 
                 font-family: Sans-serif; 
             }
             .boxBodyTop {
