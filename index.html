@@ -8,7 +8,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
 		<script> 
-            var websiteV = "0.22v";
+            var websiteV = "0.22'v";
 			var betaV = "1.4.9";
 			var StableV = "0.0";
 
@@ -42,7 +42,6 @@
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
             function doSsab() {
-                var r = document.querySelector(':root');
                 var ssab = getCookie('ssab');
                 if (ssab == "sab") {
                     ssabOff();
@@ -63,9 +62,11 @@
                 }
             }
             function ssabOn() {
+                var r = document.querySelector(':root');
                 r.style.setProperty('--textColor','white');
             }
             function ssabOff() {
+                var r = document.querySelector(':root');
                 r.style.setProperty('--textColor','#60C689');
             }
         </script>
