@@ -8,7 +8,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		
 		<script> 
-            var websiteV = "0.45v";
+            var websiteV = "0.46v";
 			var betaV = "1.4.9";
 			var StableV = "0.0";
 
@@ -42,13 +42,13 @@
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
             let bState = 0;
-            function buttonSsab() {
-                if (bState !== 1) {
-                    let bState = 1;
+            function buttonSsab(button) {
+                if (button.value == "OFF") {
+                    button.value = "ON";
                     setCookie('ssab','sab',356);
                     ssabOn();
                 } else {
-                    let bState = 0;
+                    button.value = "OFF";
                     eraseCookie('ssab');
                     ssabOff();
                 }
