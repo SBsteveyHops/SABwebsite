@@ -51,12 +51,12 @@
                 }
             }
             function buttonSsab(state) {
-                if (state == null) {
+                if (state == null || '') {
                     var state = 1;
                     setCookie('ssab','sab',356);
                     ssabOn();
                 } else {
-                    var state = null;
+                    var state = 1;
                     eraseCookie('ssab');
                     ssabOff();
                 }
