@@ -1,0 +1,35 @@
+.titleTop {
+    font-size:35px;
+    margin: 30px; 
+    color: var(--textColor); 
+    font-family: Sans-serif; 
+}
+.boxBodyTop {
+    font-size: 50px;
+    margin: 1.6665%;
+    margin-top: 4%;
+    margin-bottom: 30px;
+    color: var(--textColor); 
+    font-family: Sans-serif;
+    animation: BoxExOut 0.2s ;
+    animation-fill-mode: forwards;
+}
+.smallBody   {
+    font-size: 13px;
+    margin: 35px; 
+    margin-top: -20px;
+    color: var(--textColor); 
+    font-family: Sans-serif;
+}
+.midBody   {
+    font-size: 17px;
+    margin: 5px; 
+    color: var(--textColor); 
+    font-family: Sans-serif;
+}
+.bigBody {
+    font-size: 50px;
+    margin: 35px;
+    color: var(--textColor); 
+    font-family: Sans-serif;
+}
