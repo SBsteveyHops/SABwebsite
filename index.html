@@ -42,18 +42,21 @@
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
             function buttonSsab() {
-                if (getCookie('ssab') == 'sab') {
+                if (getCookie('ssab') == "sab") {
                     ssabOff();
                     eraseCookie('ssab');
-                    state = null;
-                } else if (state = 'sab') {
+                    alert("sab off");
+                    let state = null;
+                } else if (state == "sab") {
                     ssabOff();
                     eraseCookie('ssab');
-                    state = null;
+                    alert("sab off2");
+                    let state = null;
                 } else {
                     ssabOn();
                     setCookie('ssab', 'sab', '365');
-                    state = 'sab';
+                    alert("sab on");
+                    let state = "sab";
                 }
             }
             function doSsab() {
