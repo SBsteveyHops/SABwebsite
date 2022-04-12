@@ -42,22 +42,8 @@
                 document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
             }
             function buttonSsabStart(button, ssab) { //TODO need to make this work
-                ssab = getCookie('ssab');
-                if (ssab == sab) {
-                    button.value = "OFF";
-                } else {
-                    button.value = "ON";
-                }
-            function buttonSsab(OFF, ON);
-                if (button.value == "OFF") {
-                    button.value = "ON";
-                    setCookie('ssab','sab',356);
-                    ssabOn();
-                } else {
-                    button.value = "OFF";
-                    eraseCookie('ssab');
-                    ssabOff();
-                }
+                ssabOn();
+                setCookie('ssab', 'sab', '365');
             }
             function doSsab() {
                 var ssab = getCookie('ssab');
@@ -273,7 +259,7 @@
             }
         </style>
         
-    <body onload="version(); doSsab(); buttonSsabStart()">
+    <body onload="version(); doSsab();">
         <body style="background-color: #121212;">
         <div class="titleTop" data-aos="fade-up">This is Super Ass Brothers.</div>
         <div class="smallBody" data-aos="fade-up" id="websiteV"></div>
