@@ -45,15 +45,15 @@
                 if (getCookie('ssab') == 'sab') {
                     ssabOff();
                     eraseCookie('ssab');
-                    state = 'sab';
+                    state = null;
                 } else if (state = 'sab') {
                     ssabOff();
                     eraseCookie('ssab');
-                    state = 'sab';
+                    state = null;
                 } else {
                     ssabOn();
                     setCookie('ssab', 'sab', '365');
-                    state = 0;
+                    state = 'sab';
                 }
             }
             function doSsab() {
